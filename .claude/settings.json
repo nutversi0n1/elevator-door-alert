@@ -1,0 +1,26 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(~/.platformio/penv/bin/pio run *)",
+      "Bash(~/.platformio/penv/bin/python -)",
+      "Bash(ioreg -p IOUSB -l -w 0)",
+      "Bash(sw_vers)",
+      "Bash(ioreg -c IOSerialBSDClient -r -l -w 0)",
+      "Bash(stty -f /dev/cu.usbserial-0001)",
+      "Bash(stty -f /dev/cu.usbserial-0001 115200)",
+      "Bash(kextstat)",
+      "Bash(systemextensionsctl list *)",
+      "Read(//dev/**)",
+      "Bash(ioreg -p IOService -n \"CP2102 USB to UART Bridge Controller\" -r -l -w 0)",
+      "Bash(cd /Users/nextzy/.platformio/packages/framework-arduinoespressif32/cores/esp32 && grep -n \"getSketchMD5\\\\|getSketchSize\\\\|MD5Builder\\\\|ifdef\\\\|ifndef\\\\|#if \\\\|#endif\" Esp.h | sed -n '1,80p')",
+      "Read(//Users/nextzy/.platformio/packages/framework-arduinoespressif32/cores/esp32/**)",
+      "Bash(cd /Users/nextzy/.platformio/packages/framework-arduinoespressif32/cores/esp32 && sed -n '190,230p' Esp.cpp)",
+      "Read(//Users/nextzy/.platformio/packages/framework-arduinoespressif32/**)",
+      "Read(//Users/nextzy/.platformio/.cache/**)",
+      "Read(//Users/nextzy/.platformio/.cache/downloads/**)",
+      "Read(//Users/nextzy/.platformio/packages/**)",
+      "Read(//Users/nextzy/Documents/**)",
+      "Bash(~/.platformio/penv/bin/pio pkg *)"
+    ]
+  }
+}
